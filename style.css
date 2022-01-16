@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* common class */
+.container{
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.btn{
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg,#f5098b, #FF008E);
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #790444;
+    position: relative;
+    top: 0px;
+}
+.btn:active{
+    top: 5px;
+    box-shadow: 0 7px 0 #b80969;
+}
+.highlight{
+    color: #FF008E;
+}
+.section-title h2{
+    font-size: 40px;
+    margin: 50px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FF008E;
+    display: inline-block;
+}
+/* header part start */
+header{
+    height: 100vh;
+    background-image: url(./images/cloud.png);
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.6);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+list-style: none;
+margin: 10px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh-80px);
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-left h1{
+ font-size: 45px;
+ color: #fff;   
+}
+.banner-left p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.banner-right{
+    width: 100%;
+}
+.section-title{
+    text-align: center;
+}
+
+.section-title h2{
+    font-size: 40px;
+    margin: 50px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FF008E;
+    display: inline-block;
+}
+
+.feature{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0 30px 35px rgba(0,0,0,.2);
+    margin: 0 auto;
+}
+.card .card-icon{
+    color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #FF008E;
+    padding: 7px;
+}
+.card h3{
+    color: #FF008E;
+    font-size: 25px;
+}
+.card p{
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card a{
+    text-decoration: none;
+    color: #FF008E;
+}
